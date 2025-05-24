@@ -11,7 +11,7 @@ PsyPractice AI is a custom-built GPT designed to support clinical psychology pla
 
 ---
 
-## 🎯 Purpose
+## 💡 Purpose
 
 PsyPractice AI offers a self-guided, feedback-oriented training space where users can:
 
