@@ -72,7 +72,6 @@ Each module uses structured rubrics and supporting documents to mimic realistic 
 
 - [ ] Build an API-based version of the transcript evaluator  
 - [ ] Enable report generation for supervision portfolios  
-- [ ] Publish demo walkthrough for universities
 - [ ] Add interactive tools for real-time session monitoring  
 
 ---
