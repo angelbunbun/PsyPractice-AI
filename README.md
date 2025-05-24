@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="https://static.planetminecraft.com/files/profile_banner/5096490_1.png" alt="PsyPractice AI Banner" width="100%">
+  <img src="https://static.planetminecraft.com/files/profile_banner/5096490_1.png" alt="PsyPractice AI Banner" width="60%">
 </p>
+
 
 
 
