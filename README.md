@@ -26,6 +26,18 @@ PsyPractice AI offers a self-guided, feedback-oriented training space where user
 Upon launch, PsyPractice AI presents a training menu where users can:
 
 🧑‍🏫 Micro-skills Roleplay
+
+💬 Intervention Practice
+
+🧠 Case Formulation + Treatment Planning
+
+📋 Transcript Evaluation & Feedback
+
+📚 Intervention Fluency + Learning Support
+
+---
+
+🧑‍🏫 Micro-skills Roleplay
 Practise foundational counselling microskills such as open-ended questioning, reflection, validation, and summarising. The GPT acts as a simulated client and provides feedback based on a structured rubric. Simulated clients are based on mixed presentations, ages, genders and range from mild, moderate or severe symptomology. 
 
 💬 Intervention Practice
