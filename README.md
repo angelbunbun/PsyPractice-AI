@@ -1,5 +1,5 @@
 ![image](https://github.com/user-attachments/assets/d66d5f9d-d5e3-4ed8-9f2c-cef041e3bce3)<p align="center">
-  <img src="[https://img.freepik.com/premium-photo/cute-kitten-using-laptop_332713-21684.jpg](https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fview%2Fcat-coding-gif-22257939&psig=AOvVaw29d4MQ6ofguB15d1RFhM0q&ust=1748149034337000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCLiR3-Oou40DFQAAAAAdAAAAABAi)" alt="PsyPractice AI Banner" width="100%">
+  <img src="[https://img.freepik.com/premium-photo/cute-kitten-using-laptop_332713-21684.jpg](https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fview%2Fcat-coding-gif-22257939&psig=AOvVaw29d4MQ6ofguB15d1RFhM0q&ust=1748149034337000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCLiR3-Oou40DFQAAAAAdAAAAABAi)" width="100%">
 </p>
 
 
