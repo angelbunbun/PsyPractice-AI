@@ -62,20 +62,19 @@ Manuals are not web-searched — the system references only controlled, known PD
 ## 🧩 Features
 
 🧑‍🏫 Micro-skills Roleplay
-Practise foundational counselling skills like reflection, validation, questioning, summarising, and guiding. The GPT simulates realistic client interactions and provides structured feedback based on content from Yalom, Carl Rogers, Sommers-Flanagan, and other core clinical process texts.
+- Practise foundational counselling skills like reflection, validation, questioning, summarising, and guiding. The GPT simulates realistic client interactions and provides structured feedback based on content from Yalom, Carl Rogers, Sommers-Flanagan, and other core clinical process texts.
 
 💬 Intervention Practice
-Select a therapy modality (e.g., CBT, ACT, DBT, CFT) and roleplay psychoeducation, skill coaching, or behavioural techniques. You can request specific modules (e.g., behavioural activation, distress tolerance) or receive a randomised vignette to practise with.
+- Select a therapy modality (e.g., CBT, ACT, DBT, CFT) and roleplay psychoeducation, skill coaching, or behavioural techniques. You can request specific modules (e.g., behavioural activation, distress tolerance) or receive a randomised vignette to practise with.
 
 🧠 Case Formulation + Treatment Planning
-Submit a case snapshot or client background. PsyPractice AI will generate a 5Ps formulation (Presenting, Predisposing, Precipitating, Perpetuating, Protective), recommend treatment targets, and offer sequenced intervention suggestions based on research and clinical manuals.
+- Submit a case snapshot or client background. PsyPractice AI will generate a 5Ps formulation (Presenting, Predisposing, Precipitating, Perpetuating, Protective), recommend treatment targets, and offer sequenced intervention suggestions based on research and clinical manuals.
 
 📋 Transcript Evaluation & Feedback
-Paste a de-identified session transcript for structured analysis. The GPT rates use of therapeutic skills (e.g., empathy, focus, alliance) and highlights missed opportunities. Feedback is informed by clinical interviewing guides and process rubrics.
+- Paste a de-identified session transcript for structured analysis. The GPT rates use of therapeutic skills (e.g., empathy, focus, alliance) and highlights missed opportunities. Feedback is informed by clinical interviewing guides and process rubrics.
 
-📚 Learning & Intervention Support
+📚 Learning & Intervention Support:
 Ask questions like:
-
 - “How do I explain the DBT biosocial model?”
 - “What’s the ACT approach to values clarification?”
 
