@@ -40,7 +40,7 @@ Upon launch, PsyPractice AI presents a training menu where users can:
 ---
 
 🧑‍🏫 Micro-skills Roleplay
-Practise foundational counselling microskills such as open-ended questioning, reflection, validation, and summarising. The GPT acts as a simulated client and provides feedback based on a structured rubric. Simulated clients are based on mixed presentations, ages, genders and range from mild, moderate or severe symptomology. 
+In Micro-skills mode, the GPT draws from pre-uploaded clinical process books (e.g., Yalom, interviewing guides), its internal database, and broader knowledge to generate and evaluate roleplays focused on reflective listening, validation, questioning, summarising, guiding, and alliance-building.
 
 💬 Intervention Practice
 Select a therapy modality (e.g., CBT, ACT, DBT, CFT) and engage in roleplays to practise delivering psychoeducation, skill coaching, or behavioural interventions. You can request specific modules (e.g., behavioural activation, distress tolerance) or allow the GPT to present randomised vignettes.
