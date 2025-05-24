@@ -7,6 +7,59 @@ import requests
 app = Flask(__name__)
 manual_texts = {}
 
+
+manual_scopes = {
+    "microskills": [
+        "Clinical Interviewing  Sommers-Flanagan",
+        "Therapy Theories  Sommers-Flanagan",
+        "Interpersonal Process  Teyber",
+        "Counselling & Psychotherapy  Carl Rogers",
+        "The Gift of Therapy  Yalom",
+        "Therapist Dialogue  McHenry"
+    ],
+    "intervention": [
+        "DBT  Linehan Manual",
+        "DBT  Made Simple",
+        "CBT  Beck",
+        "CBT  Practical Guide",
+        "CBT  Brief Guide",
+        "ACT  100 Key Points",
+        "ACT  Oxford Handbook",
+        "CFT  Made Simple",
+        "CFT  Gilbert & Simos",
+        "EMDR  Shapiro"
+    ],
+    "formulation": [
+        "DSM-5-TR",
+        "CBT  Beck",
+        "CBT  Practical Guide",
+        "ACT  Oxford Handbook",
+        "CFT  Gilbert & Simos",
+        "DBT  Linehan Manual"
+    ],
+    "evaluation": [
+        "Clinical Interviewing  Sommers-Flanagan",
+        "Therapy Theories  Sommers-Flanagan",
+        "Interpersonal Process  Teyber",
+        "Counselling & Psychotherapy  Carl Rogers",
+        "The Gift of Therapy  Yalom",
+        "Therapist Dialogue  McHenry"
+    ],
+    "study": [
+        "DBT  Linehan Manual",
+        "DBT  Made Simple",
+        "CBT  Beck",
+        "CBT  Practical Guide",
+        "CBT  Brief Guide",
+        "ACT  100 Key Points",
+        "ACT  Oxford Handbook",
+        "CFT  Made Simple",
+        "CFT  Gilbert & Simos",
+        "EMDR  Shapiro"
+    ]
+}
+
+
 def download_and_extract_text(label, url):
     try:
         local_path = f"manuals/{label}.pdf"
@@ -28,10 +81,14 @@ def download_and_extract_text(label, url):
     except Exception as e:
         return f"Error processing {label}: {str(e)}"
 
-manual_links = {'CFT – Gilbert & Simos': 'https://drive.google.com/uc?id=1Jv0ucXU6Pta2mtAKqmo5YSGQ8m1aVeHL', 'ACT – Oxford Handbook': 'https://drive.google.com/uc?id=1pIoU6ZYa_mgnbtZLezB1Df7akTehE7A7', 'DBT – Linehan Manual': 'https://drive.google.com/uc?id=11vUuxUp03eRreshEUzsgUBzlvhS8a22K', 'ACT – 100 Key Points': 'https://drive.google.com/uc?id=1Q1_jHtx2QYCAI9lLflJRRNCDhhzm2r_I', 'CFT – Made Simple': 'https://drive.google.com/uc?id=1fK17sp4S74F4DXyT4S4MGtxgaiCEHsnd', 'CBT – Brief Guide': 'https://drive.google.com/uc?id=1ov-UpxqkulA3l7KW5bwTPruVVRtR5ltI', 'CBT – Beck': 'https://drive.google.com/uc?id=1G0CTMdzQylzPQYj1BOCPPdES1erS8ewc', 'CBT – Practical Guide': 'https://drive.google.com/uc?id=1ZF7ayvCLBFZ5ZMoeesuC6DhEhb6K4tRJ', 'EMDR – Shapiro': 'https://drive.google.com/uc?id=1yFxGJ1fOwck7kHYphcWIQfavVcISZYxV', 'DBT – Made Simple': 'https://drive.google.com/uc?id=1YM57GL1INv-eYotsBUcY_-XxUtX7ptqg', 'DSM-5-TR': 'https://drive.google.com/uc?id=1bXzuquafCOjAvs4T28ATO3Km-Bm0zl43', 'Interpersonal Process – Teyber': 'https://drive.google.com/uc?id=1fYycTwydvnIx_Jd2SrXAGEFKudjYhKKN', 'Therapy Theories – Sommers-Flanagan': 'https://drive.google.com/uc?id=1IzvRP85edgI4J--hvajnCTYQlp13Cpt7', 'Clinical Interviewing – Sommers-Flanagan': 'https://drive.google.com/uc?id=1pe5JN5mxG-DNMVm-sOs2JSpH3vwXCc7d', 'Therapist Dialogue – McHenry': 'https://drive.google.com/uc?id=12phEA2-lstYoXcF-sCfW3qLmwDf3T_hg', 'Counselling & Psychotherapy – Carl Rogers': 'https://drive.google.com/uc?id=1-t-5k9JrZGIqvdNHc5JNV5aijsLQ5YLF', 'The Gift of Therapy – Yalom': 'https://drive.google.com/uc?id=1G5VxS6df3FYPOANnMVNws_mLYUpBoqVF'}
+# Placeholder Google Drive links (to be replaced with actual mapping in production)
+manual_links = {
+    manual: "https://drive.google.com/uc?id=dummy_id" for scope in manual_scopes.values() for manual in scope
+}
 
 for label, url in manual_links.items():
-    manual_texts[label] = download_and_extract_text(label, url)
+    if label not in manual_texts:
+        manual_texts[label] = download_and_extract_text(label, url)
 
 @app.route("/")
 def home():
@@ -41,12 +98,18 @@ def home():
 def search_manuals():
     data = request.get_json()
     query = data.get("query", "").lower()
+    scope = data.get("scope")
 
     if not query:
         return jsonify({"error": "No query provided"}), 400
 
+    manuals_to_search = manual_texts.keys()
+    if scope and scope in manual_scopes:
+        manuals_to_search = manual_scopes[scope]
+
     results = []
-    for label, content in manual_texts.items():
+    for label in manuals_to_search:
+        content = manual_texts.get(label, "")
         matches = [line.strip() for line in content.split("\n") if query in line.lower()]
         if matches:
             results.append({
