@@ -13,58 +13,78 @@ _PsyPractice AI is a custom-built GPT designed to support clinical psychology pl
 
 ## 💡 Purpose
 
-PsyPractice AI offers a self-guided, feedback-oriented training space where users can:
+When launched, PsyPractice AI presents the following interactive learning menu:
 
-- Practise **micro-counselling skills** (e.g., validation, reflection, guiding)
-- Engage in **intervention roleplays** (CBT, ACT, DBT, CFT, EMDR or mixed)
-- Receive structured feedback on **de-identified transcript submissions**
-- Explore **case formulation and treatment planning**
-- Build session fluency with diverse modalities and client presentations, drawing on content sourced directly from comprehensive therapy manuals (i.e., DBT manual) rather than general internet summaries.
+| Mode | Description |
+|------|-------------|
+| 🧑‍🏫 **Micro-skills Roleplay** | Simulated client conversations to practise core microskills (e.g., reflection, validation, summarising) with rubric-based feedback. |
+| 💬 **Intervention Practice** | Select a modality (CBT, ACT, DBT, CFT, EMDR) and roleplay psychoeducation or skill delivery. |
+| 🧠 **Case Formulation + Treatment Planning** | Input a client case and generate 5Ps formulation + sequenced intervention recommendations. |
+| 📋 **Transcript Evaluation** | Submit a de-identified transcript for feedback on therapist skill usage and missed opportunities. |
+| 📚 **Learning & Theory Support** | Ask clinical questions and get targeted, source-based responses from real manuals. |
 
 ---
 
-## 🧩 Core Features
+## 🔍 How It Works
 
-Upon launch, PsyPractice AI presents a training menu where users can:
+PsyPractice AI combines:
+
+- **OpenAI’s GPT-4** with custom instructions and actions
+- A **private hosted API on Render** that:
+  - Downloads full-text therapy manuals (CBT, DBT, ACT, CFT, EMDR, DSM-5-TR, etc.)
+  - Extracts and caches their contents
+  - Supports real-time querying across selected manual scopes (`intervention`, `microskills`, etc.)
+
+Manuals are not web-searched — the system references only controlled, known PDFs for reliable, grounded output.
+
+---
+
+## 🧱 Tech Stack
+
+- **GPT Builder (Custom GPT)**
+- **Flask + PyMuPDF backend** (hosted via [Render](https://render.com))
+- **Google Drive + GitHub** for secure document access
+- **OpenAPI schema** for real-time search action (`/search`)
+- Optional local deployment via `main.py`
+
+---
+
+## 📁 Repository Contents
+
+| File/Folder | Description |
+|-------------|-------------|
+| `main.py` | Flask app that handles manual downloads, extraction, and search |
+| `requirements.txt` | Required packages (Flask, PyMuPDF, requests) |
+| `README.md` | This file |
+| `PRIVACY.md` | Public privacy policy for GPT action |
+| `manuals/` | (Optional) Used for local deployment; hosted elsewhere in production |
+
+---
+
+## 🧩 Feature Deep-Dive
 
 🧑‍🏫 Micro-skills Roleplay
+Practise foundational counselling skills like reflection, validation, questioning, summarising, and guiding. The GPT simulates realistic client interactions and provides structured feedback based on content from Yalom, Carl Rogers, Sommers-Flanagan, and other core clinical process texts.
 
 💬 Intervention Practice
+Select a therapy modality (e.g., CBT, ACT, DBT, CFT) and roleplay psychoeducation, skill coaching, or behavioural techniques. You can request specific modules (e.g., behavioural activation, distress tolerance) or receive a randomised vignette to practise with.
 
 🧠 Case Formulation + Treatment Planning
+Submit a case snapshot or client background. PsyPractice AI will generate a 5Ps formulation (Presenting, Predisposing, Precipitating, Perpetuating, Protective), recommend treatment targets, and offer sequenced intervention suggestions based on research and clinical manuals.
 
 📋 Transcript Evaluation & Feedback
+Paste a de-identified session transcript for structured analysis. The GPT rates use of therapeutic skills (e.g., empathy, focus, alliance) and highlights missed opportunities. Feedback is informed by clinical interviewing guides and process rubrics.
 
-📚 Intervention Fluency + Learning Support
+📚 Learning & Intervention Support
+Ask questions like:
 
----
+- “How do I explain the DBT biosocial model?”
+- “What’s the ACT approach to values clarification?”
 
-🧑‍🏫 Micro-skills Roleplay
-In Micro-skills mode, the GPT draws from pre-uploaded clinical process books (e.g., Yalom, interviewing guides), its internal database, and broader knowledge to generate and evaluate roleplays focused on reflective listening, validation, questioning, summarising, guiding, and alliance-building.
+The GPT searches directly across full-text manuals (CBT, DBT, ACT, CFT, etc.) and responds with real clinical guidance — not surface-level summaries.
 
-💬 Intervention Practice
-Select a therapy modality (e.g., CBT, ACT, DBT, CFT) and engage in roleplays to practise delivering psychoeducation, skill coaching, or behavioural interventions. You can request specific modules (e.g., behavioural activation, distress tolerance) or allow the GPT to present randomised vignettes.
-
-🧠 Case Formulation + Treatment Planning
-Provide a case snapshot or basic history. The GPT will assist in generating a 5Ps formulation (Presenting, Predisposing, Precipitating, Perpetuating, Protective), suggest appropriate treatment targets, and recommend intervention sequencing. Information suggested has been taken across research papers, evidence-based information and scraped from intervention manuals. 
-
-📋 Transcript Evaluation & Feedback
-Upload or paste a de-identified session transcript. The GPT will evaluate it using a micro-skills rubric (uploaded into the GPT) and provide structured feedback, including skill ratings, missed opportunities, and suggested improvements.
-
-📚 Intervention Fluency + Learning Support
-Ask the GPT questions about therapeutic concepts or modules (e.g., “How do I create a CFT formulation for this client?”). The GPT queries content directly from full manuals (e.g., DBT, CBT, ACT, CFT), offering guidance grounded in actual clinical resources—not just surface-level summaries (such as other GPTs). 
-
-This API connects the GPT to a private, hosted search tool that scans full-text therapy manuals in real time and returns the most relevant excerpts. As a result, the GPT can provide guidance grounded in real clinician resources—not surface-level web content or hallucinated summaries._
-
-Each module uses structured rubrics and supporting documents to mimic realistic clinical supervision.
-
----
-
-## 📂 Repository Contents
-
-- Contact for full list of repository contents
-
-> 📌 These documents are uploaded into the GPT to guide its responses and feedback processes.
+📡 Behind the Scenes:
+All learning support is powered by a private API that searches comprehensive PDF manuals hosted on a Render server. Only verified sources are used (no hallucinated or open-web content), allowing PsyPractice AI to provide grounded, supervision-aligned responses.
 
 ---
 
