@@ -136,7 +136,7 @@ def search_manuals():
     if not results:
         return jsonify({"result": "No relevant content found."})
 
-    return jsonify({"results": results})
+    return jsonify({"results": results[:5]})  # Limit to top 5 manuals total
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
