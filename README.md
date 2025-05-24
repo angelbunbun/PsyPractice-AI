@@ -1,6 +1,11 @@
+<p align="center">
+  <img src="https://img.freepik.com/premium-photo/cute-kitten-using-laptop_332713-21684.jpg" alt="PsyPractice AI Banner" width="100%">
+</p>
+
+
 # PsyPractice AI – Resource Repository
 
-**PsyPractice AI** is a custom-built ChatGPT designed to support clinical psychology trainees and early-career practitioners in strengthening their therapeutic skills through structured, simulated learning.
+**PsyPractice AI** is a custom-built GPT designed to support clinical psychology placement students and early-career practitioners in strengthening their therapeutic skills through structured, simulated learning.
 
 ---
 
@@ -46,12 +51,6 @@ Each module uses structured rubrics and supporting documents to mimic realistic 
 - Contact for full list of repository contents
 
 > 📌 These documents are uploaded into the GPT to guide its responses and feedback processes.
-
----
-
-## 🖼️ Visual Banner
-
-![PsyPractice AI Banner](A_digital_graphic_design_banner_showcases_PsyPract.png)
 
 ---
 
