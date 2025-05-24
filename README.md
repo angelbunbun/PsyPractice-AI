@@ -42,7 +42,7 @@ Manuals are not web-searched — the system references only controlled, known PD
 ## 🧱 Tech Stack
 
 - **GPT Builder (Custom GPT)**
-- **Flask + PyMuPDF backend** (hosted via [Render](https://psypractice-ai.onrender.com)
+- **Flask + PyMuPDF backend** (hosted via [Render](https://psypractice-ai.onrender.com))
 - **Google Drive + GitHub** for secure document access
 - **OpenAPI schema** for real-time search action (`/search`)
 - Optional local deployment via `main.py`
@@ -55,13 +55,12 @@ Manuals are not web-searched — the system references only controlled, known PD
 |-------------|-------------|
 | `main.py` | Flask app that handles manual downloads, extraction, and search |
 | `requirements.txt` | Required packages (Flask, PyMuPDF, requests) |
-| `README.md` | This file |
 | `PRIVACY.md` | Public privacy policy for GPT action |
 | `manuals/` | (Optional) Used for local deployment; hosted elsewhere in production |
 
 ---
 
-## 🧩 Feature Deep-Dive
+## 🧩 Features
 
 🧑‍🏫 Micro-skills Roleplay
 Practise foundational counselling skills like reflection, validation, questioning, summarising, and guiding. The GPT simulates realistic client interactions and provides structured feedback based on content from Yalom, Carl Rogers, Sommers-Flanagan, and other core clinical process texts.
