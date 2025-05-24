@@ -42,7 +42,7 @@ Manuals are not web-searched — the system references only controlled, known PD
 ## 🧱 Tech Stack
 
 - **GPT Builder (Custom GPT)**
-- **Flask + PyMuPDF backend** (hosted via [Render](https://render.com))
+- **Flask + PyMuPDF backend** (hosted via [Render](https://psypractice-ai.onrender.com)
 - **Google Drive + GitHub** for secure document access
 - **OpenAPI schema** for real-time search action (`/search`)
 - Optional local deployment via `main.py`
