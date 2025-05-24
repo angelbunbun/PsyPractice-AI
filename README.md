@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://static.planetminecraft.com/files/profile_banner/5096490_1.png" alt="PsyPractice AI Banner" width="60%">
+  <img src="https://i.ytimg.com/vi/a_JdqfQz97E/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLACNXbJg8w8d2LrR1u9uKhjTLEUkQ" alt="PsyPractice AI Banner" width="60%">
 </p>
 
 
