@@ -5,7 +5,7 @@
 
 
 
-# _PsyPractice AI_
+# 𝙿𝚜𝚢𝙿𝚛𝚊𝚌𝚝𝚒𝚌𝚎 𝙰𝙸
 
 **PsyPractice AI** is a custom-built GPT designed to support clinical psychology placement students and early-career practitioners in strengthening their therapeutic skills through structured, simulated learning.
 
