@@ -11,8 +11,8 @@ _PsyPractice AI is a custom-built GPT designed to support clinical psychology st
 
 > ⚠️ **Notice (May 2025):**  
 > PsyPractice AI is currently in private mode while undergoing OpenAI's usage policy review.
-> ✅ Backend API: Online via [Render](https://psypractice-ai.onrender.com)
-> ⚠️ GPT Frontend: Currently private (pending OpenAI appeal)
+> - ✅ Backend API: Online via [Render](https://psypractice-ai.onrender.com)
+> - ⚠️ GPT Frontend: Currently private (pending OpenAI appeal)
 
 ---
 
