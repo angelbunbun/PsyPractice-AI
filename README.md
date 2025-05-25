@@ -5,9 +5,14 @@
 
 
 
-# 🧠 [PsyPractice AI](https://chatgpt.com/g/g-68312b6497f8819188b2394f580b3fba-psypractice-ai)
+# 🧠 [PsyPractice AI](https://chatgpt.com/g/g-68312b6497f8819188b2394f580b3fba-psypractice-ai) (currently 
 
 _PsyPractice AI is a custom-built GPT designed to support clinical psychology students and early-career practitioners in strengthening their therapeutic skills through structured, simulated learning._
+
+> ⚠️ **Notice (May 2025):**  
+> PsyPractice AI is currently in private mode while undergoing OpenAI's usage policy review.
+> ✅ Backend API: Online via [Render](https://psypractice-ai.onrender.com)
+> ⚠️ GPT Frontend: Currently private (pending OpenAI appeal)
 
 ---
 
