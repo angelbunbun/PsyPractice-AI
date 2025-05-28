@@ -5,7 +5,7 @@
 
 
 
-# 🧠 [PsyPractice AI](https://chatgpt.com/g/g-68312b6497f8819188b2394f580b3fba-psypractice-ai) (currently 
+# 🧠 [PsyPractice AI](https://chatgpt.com/g/g-68312b6497f8819188b2394f580b3fba-psypractice-ai) 
 
 _PsyPractice AI is a custom-built GPT designed to support clinical psychology students and early-career practitioners in strengthening their therapeutic skills through structured, simulated learning._
 
